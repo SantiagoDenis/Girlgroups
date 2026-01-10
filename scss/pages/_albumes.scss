@@ -1,0 +1,45 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../base/typography" as * ;
+
+body {
+    background-color: c(bg);
+    font-family: $font-hand;
+}
+.cards {
+    p {
+        color: c(text);
+    }
+}
+.titulo {
+   @include flex(row,center,stretch,wrap,20px);
+   font-size:30px;
+}
+.groups {
+  @include flex(row,flex-start,stretch,wrap,20px);
+  border: solid white 2px; 
+  border-radius: 15px; 
+  padding: 10px;
+  background: linear-gradient(c(bg),c(effects));
+  .card {
+  width: 180px;
+  @include flex(row,center,center,wrap,20px);
+   img {
+    width: 100%;
+  height: auto;
+  border: solid white 1px;
+   }
+   p:hover {
+    color : white;
+   } 
+  }
+  .card img:hover {
+    color: rgb(110, 26, 26);
+    outline: 4px solid hotpink;
+}
+}
+
+
+
+
+

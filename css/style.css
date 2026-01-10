@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+Caucasian+Albanian&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Noto+Sans+Caucasian+Albanian&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Noto+Sans+Caucasian+Albanian&family=Pacifico&display=swap");
+:root {
+  --text:#231C07 ;
+  --effects: #EA9AB2 ;
+  --bg:#EFCFE3;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Gochi Hand", cursive;
+}
+
+.cards p {
+  color: var(--text);
+}
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 30px;
+}
+
+.groups {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: solid white 2px;
+  border-radius: 15px;
+  padding: 10px;
+  background: linear-gradient(var(--bg), var(--effects));
+}
+.groups .card {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.groups .card img {
+  width: 100%;
+  height: auto;
+  border: solid white 1px;
+}
+.groups .card p:hover {
+  color: white;
+}
+.groups .card img:hover {
+  color: rgb(110, 26, 26);
+  outline: 4px solid hotpink;
+}
+
+/*# sourceMappingURL=style.css.map */

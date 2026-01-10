@@ -1,0 +1,11 @@
+:root{
+ --text:#231C07 ;
+ --effects: #EA9AB2 ;
+ --bg:#EFCFE3;
+}
+
+$colors: (
+    text: var(--text),
+    effects: var(--effects),
+    bg : var(--bg),
+);
