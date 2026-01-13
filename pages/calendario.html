@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendario</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html">INICIO</a>
+      <a href="./calendario.html">CALENDARIO</a>
+      <a href="./grupos.html">GRUPOS</a>
+      <a href="./albumes.html">ALBUMES</a>
+      <a href="./solistas.html">SOLISTAS</a>
+    </nav>
+  </header>
+
+ <main class="calendar-page">
+  <h1>Calendario de lanzamientos</h1>
+<div class="calendar-wrapper">
+
+  <div class="released">
+    <img src="../assets/media/albumes/KATSEYE_-_Internet_Girl.webp">
+    <p>
+      Ultimo lanzamiento:<br>
+      KATSEYE<br>
+      Internet Girl<br>
+      Enero-02-2026
+    </p>
+  </div>
+  
+  <div class="calendar-center">
+    <div id="info">Elegí una fecha</div>
+    <input type="text" id="calendar">
+  </div>
+
+  <div class="next">
+    <img src="../assets/media/albumes/KATSEYE_-_Internet_Girl.webp">
+    <p>
+      Próximo lanzamiento:<br>
+      No hay lanzamientos próximos<br>
+      😓
+    </p>
+  </div>
+
+</div>
+
+  
+  <div id="info">
+  </div>
+</main>
+
+
+  <footer></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
+  <script src="/js/calendario.js"></script>
+</body>
+</html>

@@ -1,19 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+Caucasian+Albanian&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Noto+Sans+Caucasian+Albanian&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Noto+Sans+Caucasian+Albanian&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Noto+Sans+Caucasian+Albanian&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --text:#231C07 ;
   --effects: #EA9AB2 ;
   --bg:#EFCFE3;
 }
 
-body {
-  background-color: var(--bg);
-  font-family: "Gochi Hand", cursive;
+.card {
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border: solid white 1px;
+}
+.card p:hover {
+  color: white;
+}
+
+.card img:hover {
+  color: rgb(110, 26, 26);
+  outline: 4px solid hotpink;
 }
 
 .cards p {
   color: var(--text);
+}
+
+body {
+  background-color: var(--bg);
+  font: "Poppins", Comic-sans;
 }
 
 .titulo {
@@ -24,6 +45,7 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   font-size: 30px;
+  font-weight: bold;
 }
 
 .groups {
@@ -38,7 +60,35 @@ body {
   padding: 10px;
   background: linear-gradient(var(--bg), var(--effects));
 }
-.groups .card {
+
+.highlight {
+  color: var(--text);
+  font-weight: bold;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Poppins", Comic-sans;
+}
+
+.calendar-page {
+  padding: 40px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.released, .next {
   width: 180px;
   display: flex;
   flex-direction: row;
@@ -46,18 +96,62 @@ body {
   align-content: center;
   flex-wrap: wrap;
   gap: 20px;
+  background-color: var(--effects);
+  border: solid white 2px;
 }
-.groups .card img {
-  width: 100%;
-  height: auto;
-  border: solid white 1px;
-}
-.groups .card p:hover {
+.released p:hover, .next p:hover {
   color: white;
 }
-.groups .card img:hover {
+.released img, .next img {
+  width: 140px;
+  height: 140px;
+}
+
+.released:hover, .next:hover {
   color: rgb(110, 26, 26);
   outline: 4px solid hotpink;
+}
+
+.calendar-wrapper {
+  transform: scale(1.4);
+  transform-origin: top center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.calendar-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.flatpickr-day {
+  position: relative;
+}
+
+.evento-label {
+  position: absolute;
+  bottom: -1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  color: hotpink;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.flatpickr-day.evento {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
