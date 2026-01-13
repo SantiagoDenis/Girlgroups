@@ -1,0 +1,80 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../base/typography" as * ;
+
+
+main {
+    margin: 0px 40px 0px 40px;
+}
+
+body {
+    background-color: c(bg);
+}
+
+.main__title {
+    color: c(text);
+    font-weight: bold;
+    justify-self: center;
+    font-size: 60px;
+}
+
+.main__block {
+    @include flex(row, center, flex-start, wrap, 40px);
+    
+    &__info {
+        p {
+            box-sizing: border-box;        
+            text-align: justify;
+            font-size: 18px;
+            color: c(text);
+            max-width: 700px;
+        }
+    }
+}
+
+h1 {
+    justify-self: center;
+    color: c(text);
+}
+
+.card__data {
+    @include flex(column, flex-start, flex-start, nowrap);
+    max-width: 500px;
+    border-radius: 10px;
+   
+    .card__data__img {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(234, 154, 178, 0.3);
+        border-radius: 10px 10px 0px 0px;
+
+        img {
+            border-radius: 10px 10px 0px 0px;
+            max-width: 450px;
+            align-self: center;
+        }
+        
+    }
+    
+    .card__data__ending {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    div {
+        @include flex(row, space-between, center, wrap);
+        background-color: rgba(234, 154, 178, 0.3);
+        color: c(text);
+
+        p {
+            padding: 7px;
+            margin: 7px;
+        }
+
+        .card__data__item {
+            padding-left: 10px;
+            font-weight: bold
+        }
+    }
+}
+
+
