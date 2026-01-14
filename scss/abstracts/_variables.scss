@@ -2,10 +2,12 @@
  --text:#231C07 ;
  --effects: #EA9AB2 ;
  --bg:#EFCFE3;
+ --basic: #fff;
 }
 
 $colors: (
     text: var(--text),
     effects: var(--effects),
     bg : var(--bg),
+    basic:var(--basic),
 );

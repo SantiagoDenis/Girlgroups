@@ -8,3 +8,8 @@
         gap: $gap
     }
 }
+@mixin respond-min($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}

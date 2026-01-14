@@ -1,0 +1,21 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/functions" as *;
+
+
+.shelf-cards {
+  min-height: 550px;
+
+  background: linear-gradient(
+    rgba(255,255,255,.35),
+    rgba(255,255,255,.15)
+  );
+  backdrop-filter: blur(10px);
+
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.3);
+
+  padding: 32px;
+
+  @include flex(row, center, center, wrap);
+}

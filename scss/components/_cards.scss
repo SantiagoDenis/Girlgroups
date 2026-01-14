@@ -1,6 +1,7 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/functions" as *;
 @use "../base/typography" as * ;
+@use '../layout/grids';
 
  .card {
   width: 180px;
@@ -100,10 +101,78 @@
         }
 
         a:hover {
-            background-color: white;
+            background-color:  c(basic);
             color: c(effects);
         }
 
 
     }
 }
+
+/* INDEX */
+
+.index-card {
+    @include flex(column, center, center);
+    margin: 20px;
+    width: 460px;
+    height: 440px;
+    border-radius: 16px;
+    overflow: hidden;
+    font-size: 20px;
+    color:c(basic);
+    cursor: pointer;
+
+  box-shadow: 0 6px 16px rgba(0,0,0,.2);
+  transition: transform .3s ease, box-shadow .3s ease;
+
+  &-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+  }
+
+
+  &__overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    @include flex(column, center);
+    align-items: center;
+    gap: 6px;
+
+    background: rgba(0,0,0,.6);
+    opacity: 0;
+    transition: opacity .3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+
+
+    .index-card__overlay {
+        opacity: 1;
+        h3 {
+            font-size: 30px;
+            font-weight: 600;
+        }    
+    }
+  }
+}
+.titulos{
+    font-size: 45px; 
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.index-acerca-d {
+    font-size: 20px; 
+    font-weight: 600; 
+}
+
+
