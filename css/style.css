@@ -24,6 +24,17 @@ body {
   background-position: center;
 }
 
+.basta {
+  background-image: url("../assets/media/foto_grupo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.basta__jaja {
+  min-width: 100px;
+  min-height: 1000px;
+}
+
 body {
   font-family: "Poppins", Comic-sans;
   font-weight: 400;
@@ -141,16 +152,15 @@ footer {
   justify-content: flex-start;
   align-content: center;
   flex-wrap: wrap;
-  background-color: rgba(234, 154, 178, 0.4);
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15));
   backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 2px solid rgba(234, 154, 178, 0.5);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   max-width: 210px;
-  outline: var(--effects) 10px;
 }
 .members .member__card img {
   max-height: 250px;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
 }
 .members .member__card img:hover {
   opacity: 0.7;
@@ -174,40 +184,6 @@ footer {
 }
 .members .member__card:hover {
   box-shadow: black 20px;
-}
-
-.main__card {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-.main__card img {
-  max-width: 600px;
-  border-radius: 10px;
-}
-.main__card__wbutton {
-  position: relative;
-}
-.main__card__wbutton a {
-  left: 34%;
-  bottom: 10%;
-  background-color: rgba(234, 154, 178, 0.8);
-  backdrop-filter: blur(10px);
-  color: var(--text);
-  font-weight: 600;
-  text-decoration: none;
-  position: absolute;
-  border-radius: 15px;
-  min-width: 200px;
-  max-height: 200px;
-  text-align: center;
-}
-.main__card__wbutton a:hover {
-  background-color: var(--basic);
-  color: var(--effects);
 }
 
 /* INDEX */
@@ -295,14 +271,15 @@ body {
 .groups {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-content: stretch;
+  justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  border: solid white 2px;
-  border-radius: 15px;
   padding: 10px;
-  background: linear-gradient(var(--bg), var(--effects));
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15));
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .highlight {
@@ -446,16 +423,23 @@ h1 {
 .card__data .card__data__img {
   display: flex;
   justify-content: center;
-  background-color: rgba(234, 154, 178, 0.3);
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 14px 14px 0px 0px;
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .card__data .card__data__img img {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 14px 14px 0px 0px;
   max-width: 450px;
   align-self: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.card__data .card__data__middle {
+  border: 0.2px solid rgba(255, 255, 255, 0.3);
 }
 .card__data .card__data__ending {
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0px 0px 14px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .card__data div {
   display: flex;

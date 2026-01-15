@@ -34,16 +34,18 @@
 
     .member__card {
         @include flex (column, flex-start, center, wrap);
-        background-color: rgba(234, 154, 178, 0.4);
+        background: linear-gradient(
+        rgba(255,255,255,.35),
+        rgba(255,255,255,.15)
+        );
         backdrop-filter: blur(10px);
-        border-radius: 10px;
-        border: 2px solid rgba(234, 154, 178, 0.5);
+        border-radius: 14px;
+        border: 1px solid rgba(255,255,255,.3);
         max-width: 210px;
-        outline: c(effects) 10px;
 
         img {
             max-height: 250px;
-            border-radius: 10px 10px 0px 0px;
+            border-radius: 15px 15px 0px 0px;
         }
 
         img:hover {
@@ -75,39 +77,6 @@
     }
 }
 
-.main__card {
-    @include flex (row, center, center, wrap, 40px);
-    img {
-        max-width: 600px;
-        border-radius: 10px;
-    }
-
-    &__wbutton {
-       position: relative;
-
-        a {
-            left: 34%;
-            bottom: 10%;
-            background-color: rgba(234, 154, 178, 0.8);
-            backdrop-filter: blur(10px);
-            color: c(text);
-            font-weight: 600;
-            text-decoration: none;
-            position: absolute;
-            border-radius: 15px;
-            min-width: 200px;
-            max-height: 200px;
-            text-align: center;
-        }
-
-        a:hover {
-            background-color:  c(basic);
-            color: c(effects);
-        }
-
-
-    }
-}
 
 /* INDEX */
 

@@ -45,19 +45,30 @@ h1 {
     .card__data__img {
         display: flex;
         justify-content: center;
-        background-color: rgba(234, 154, 178, 0.3);
-        border-radius: 10px 10px 0px 0px;
+        border-radius: 14px 14px 0px 0px;
+        background: linear-gradient(
+        rgba(255,255,255,.35),
+        rgba(255,255,255,.15)
+        );
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,.3);
 
         img {
-            border-radius: 10px 10px 0px 0px;
+            border-radius: 14px 14px 0px 0px;
             max-width: 450px;
             align-self: center;
+            border: 1px solid rgba(255,255,255,.3);
         }
         
     }
+
+    .card__data__middle {
+        border: 0.2px solid rgba(255,255,255,.3);
+    }
     
     .card__data__ending {
-        border-radius: 0px 0px 10px 10px;
+        border-radius: 0px 0px 14px 14px;
+        border: 1px solid rgba(255,255,255,.3);
     }
 
     div {

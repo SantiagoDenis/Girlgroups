@@ -14,11 +14,16 @@ body {
    font-weight: bold;
 }
 .groups {
-  @include flex(row,flex-start,stretch,wrap,20px);
-  border: solid white 2px; 
-  border-radius: 15px; 
+  @include flex(row, center,center,wrap,20px);
   padding: 10px;
-  background: linear-gradient(c(bg),c(effects));
+  background:linear-gradient(
+    rgba(255,255,255,.35),
+    rgba(255,255,255,.15)
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.3);
+
 }
 .highlight {
   color: c(text);
