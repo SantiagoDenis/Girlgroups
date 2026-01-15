@@ -90,10 +90,22 @@ nav ul img {
 }
 
 footer {
+  margin-top: 40px;
   padding: 20px 150px 20px 150px;
   background-color: rgba(234, 154, 178, 0.3);
   backdrop-filter: blur(10px);
   bottom: 0;
+}
+footer .card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+footer .card__footer img {
+  max-width: 45px;
 }
 
 .shelf-cards {

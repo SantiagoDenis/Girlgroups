@@ -1,6 +1,19 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+
 footer {
+    margin-top: 40px;
     padding: 20px 150px 20px 150px;
     background-color:rgba(234, 154, 178, 0.3) ;
     backdrop-filter: blur(10px);
     bottom: 0;
+
+    .card__footer {
+        @include flex(row, space-evenly, center, wrap, 40px); 
+        
+        img {
+            max-width: 45px;
+        }
+    }
 }
+
