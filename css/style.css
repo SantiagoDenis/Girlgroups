@@ -4,6 +4,7 @@
   --text:#231C07 ;
   --effects: #EA9AB2 ;
   --bg:#EFCFE3;
+  --basic: #fff;
 }
 
 * {
@@ -82,6 +83,20 @@ footer {
   background-color: rgba(234, 154, 178, 0.3);
   backdrop-filter: blur(10px);
   bottom: 0;
+}
+
+.shelf-cards {
+  min-height: 550px;
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.15));
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -191,8 +206,74 @@ footer {
   text-align: center;
 }
 .main__card__wbutton a:hover {
-  background-color: white;
+  background-color: var(--basic);
   color: var(--effects);
+}
+
+/* INDEX */
+.index-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin: 20px;
+  width: 460px;
+  height: 440px;
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: 20px;
+  color: var(--basic);
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.index-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.index-card__overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.index-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+.index-card:hover .index-card__overlay {
+  opacity: 1;
+}
+.index-card:hover .index-card__overlay h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.titulos {
+  font-size: 45px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.index-acerca-d {
+  font-size: 20px;
+  font-weight: 600;
 }
 
 body {
