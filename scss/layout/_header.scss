@@ -1,0 +1,39 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/functions" as *;
+@use "../base/typography" as * ;
+
+@media (min-width: 1024px) {
+header {
+    @include flex (row, space-between, center, nowrap);
+    padding: 20px 150px 20px 150px;
+    background-color:rgba(234, 154, 178, 0.3) ;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    img {
+        align-self: center;
+        max-width: 100px;
+    }
+}
+}
+
+@media (min-width: 375px) {
+    header {
+        nav {
+            padding: 13px;
+        }
+    
+    position: sticky;
+    background-color:rgba(234, 154, 178, 0.3) ;
+    backdrop-filter: blur(10px);
+    top: 0;
+    z-index: 100;
+    @include flex (row, space-between, center, nowrap);
+     img {
+        align-self: center;
+        max-width: 100px;
+    }
+    }
+}
