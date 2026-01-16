@@ -88,4 +88,92 @@ h1 {
     }
 }
 
+@media (max-width: 965px) {
+    .card__data {
+    @include flex(column, flex-start, flex-start, wrap);
+    max-width: 500px;
+    border-radius: 10px;
+   
+    .card__data__img {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(234, 154, 178, 0.3);
+        border-radius: 10px 10px 0px 0px;
 
+        img {
+            border-radius: 10px 10px 0px 0px;
+            max-width:350px;
+            align-self: center;
+        }
+        
+    }
+    
+    .card__data__ending {
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    div {
+        @include flex(row, space-between, center, wrap);
+        background-color: rgba(234, 154, 178, 0.3);
+        color: c(text);
+
+        p {
+            padding: 7px;
+            margin: 7px;
+        }
+
+        .card__data__item {
+            padding-left: 10px;
+            font-weight: bold
+        }
+    }
+}
+
+}
+
+@media (max-width: 965px) {
+    .main__card {
+        padding: 10px;
+        img {
+            max-width: 350px;
+        }
+
+        &__wbutton {
+            a {
+                left: 21%;
+            }
+             
+        }
+    }
+}
+
+@media (max-width:965px) {
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .main__title {
+        font-size: 35px;
+    }
+    
+    .main__block {
+        padding: 10px;
+
+        &__info {
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+
+    .index-card {
+        max-height: 180px;
+    }
+}
+.index-card__text {
+    font-weight: bold;
+
+
+}

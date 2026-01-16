@@ -25,3 +25,9 @@ body {
     min-width: 100px;
     min-height: 1000px;
 }
+
+@media (max-width: 965px) {
+    main {
+        padding: 0;
+    }
+}

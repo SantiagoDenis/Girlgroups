@@ -45,3 +45,44 @@ nav {
     }
     
 }
+
+@media (max-width: 965px) {
+    header {
+        @include flex (column, space-between, center, wrap, 10px);
+        position:static;
+        top: 0;
+        padding: 10px;
+
+         a {
+            align-self: center;
+            img {
+            max-width: 70px;
+            }
+        }
+    }
+
+    nav {
+        ul {
+            @include flex (row, space-evenly, center, wrap);
+            list-style: none;
+            li {
+                align-self: center;
+                a {
+                    font-size: large;
+                    font-weight: bold;
+                    color: c(text);
+                    text-decoration: none;
+                    text-align: center;
+                }
+
+                a:hover {
+                    color: white;
+                }
+            }
+        
+            img {
+                max-width: 35px;
+            }
+        }
+    }
+}
